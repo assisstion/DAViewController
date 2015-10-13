@@ -24,4 +24,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(id)init{//initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
+    //self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super init];
+    if(self){
+        self.tabBarItem.title = @"Hypnotize";
+        UIImage * image = [UIImage imageNamed:@"Hypno.png"];
+        self.tabBarItem.image = image;
+    }
+    return self;
+    
+}
+
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "PickerViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    ViewController * root = [[ViewController alloc] init];
+    
+    PickerViewController * picker = [[PickerViewController alloc] init];
+    
+    UITabBarController * tabBarController = [[UITabBarController alloc] init];
+    
+    tabBarController.viewControllers = @[root, picker];
+    
+    self.window.rootViewController = tabBarController;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
