@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B45BA331BCD590F0050FEA7 /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B45BA321BCD590F0050FEA7 /* PickerViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6BA3921D1BCC0A1900BB04E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA3921C1BCC0A1900BB04E7 /* main.m */; };
 		6BA392201BCC0A1900BB04E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA3921F1BCC0A1900BB04E7 /* AppDelegate.m */; };
 		6BA392231BCC0A1900BB04E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA392221BCC0A1900BB04E7 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B45BA311BCD590E0050FEA7 /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
+		6B45BA321BCD590F0050FEA7 /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
 		6BA392181BCC0A1900BB04E7 /* DAViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DAViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BA3921C1BCC0A1900BB04E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6BA3921E1BCC0A1900BB04E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 				6BA3921F1BCC0A1900BB04E7 /* AppDelegate.m */,
 				6BA392211BCC0A1900BB04E7 /* ViewController.h */,
 				6BA392221BCC0A1900BB04E7 /* ViewController.m */,
+				6B45BA311BCD590E0050FEA7 /* PickerViewController.h */,
+				6B45BA321BCD590F0050FEA7 /* PickerViewController.m */,
 				6BA392241BCC0A1900BB04E7 /* Main.storyboard */,
 				6BA392271BCC0A1900BB04E7 /* Assets.xcassets */,
 				6BA392291BCC0A1900BB04E7 /* LaunchScreen.storyboard */,
@@ -275,6 +280,7 @@
 			files = (
 				6BA392231BCC0A1900BB04E7 /* ViewController.m in Sources */,
 				6BA392201BCC0A1900BB04E7 /* AppDelegate.m in Sources */,
+				6B45BA331BCD590F0050FEA7 /* PickerViewController.m in Sources */,
 				6BA3921D1BCC0A1900BB04E7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,6 +505,7 @@
 				6BA392471BCC0A1900BB04E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6BA392481BCC0A1900BB04E7 /* Build configuration list for PBXNativeTarget "DAViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +514,7 @@
 				6BA3924A1BCC0A1900BB04E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6BA3924B1BCC0A1900BB04E7 /* Build configuration list for PBXNativeTarget "DAViewControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +523,7 @@
 				6BA3924D1BCC0A1900BB04E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
