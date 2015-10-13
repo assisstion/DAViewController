@@ -28,7 +28,7 @@
     //self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     self = [super init];
     if(self){
-        self.tabBarItem.title = @"Hypnotize";
+        self.tabBarItem.title = @"Calendar";
         UIImage * image = [UIImage imageNamed:@"Hypno.png"];
         self.tabBarItem.image = image;
     }
