@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B45BA331BCD590F0050FEA7 /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B45BA321BCD590F0050FEA7 /* PickerViewController.m */; settings = {ASSET_TAGS = (); }; };
+		15DD4E011BCD5E22005A6B4B /* pickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15DD4E001BCD5E22005A6B4B /* pickerView.xib */; };
+		6B45BA331BCD590F0050FEA7 /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B45BA321BCD590F0050FEA7 /* PickerViewController.m */; };
 		6BA3921D1BCC0A1900BB04E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA3921C1BCC0A1900BB04E7 /* main.m */; };
 		6BA392201BCC0A1900BB04E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA3921F1BCC0A1900BB04E7 /* AppDelegate.m */; };
 		6BA392231BCC0A1900BB04E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA392221BCC0A1900BB04E7 /* ViewController.m */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15DD4E001BCD5E22005A6B4B /* pickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = pickerView.xib; sourceTree = "<group>"; };
 		6B45BA311BCD590E0050FEA7 /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
 		6B45BA321BCD590F0050FEA7 /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
 		6BA392181BCC0A1900BB04E7 /* DAViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DAViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,13 +106,12 @@
 		6BA3921A1BCC0A1900BB04E7 /* DAViewController */ = {
 			isa = PBXGroup;
 			children = (
-				6BA3921E1BCC0A1900BB04E7 /* AppDelegate.h */,
-				6BA3921F1BCC0A1900BB04E7 /* AppDelegate.m */,
 				6BA392211BCC0A1900BB04E7 /* ViewController.h */,
 				6BA392221BCC0A1900BB04E7 /* ViewController.m */,
 				6B45BA311BCD590E0050FEA7 /* PickerViewController.h */,
 				6B45BA321BCD590F0050FEA7 /* PickerViewController.m */,
 				6BA392241BCC0A1900BB04E7 /* Main.storyboard */,
+				15DD4E001BCD5E22005A6B4B /* pickerView.xib */,
 				6BA392271BCC0A1900BB04E7 /* Assets.xcassets */,
 				6BA392291BCC0A1900BB04E7 /* LaunchScreen.storyboard */,
 				6BA3922C1BCC0A1900BB04E7 /* Info.plist */,
@@ -122,6 +123,8 @@
 		6BA3921B1BCC0A1900BB04E7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6BA3921E1BCC0A1900BB04E7 /* AppDelegate.h */,
+				6BA3921F1BCC0A1900BB04E7 /* AppDelegate.m */,
 				6BA3921C1BCC0A1900BB04E7 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -251,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15DD4E011BCD5E22005A6B4B /* pickerView.xib in Resources */,
 				6BA3922B1BCC0A1900BB04E7 /* LaunchScreen.storyboard in Resources */,
 				6BA392281BCC0A1900BB04E7 /* Assets.xcassets in Resources */,
 				6BA392261BCC0A1900BB04E7 /* Main.storyboard in Resources */,
