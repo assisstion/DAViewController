@@ -28,7 +28,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if(self){
         self.tabBarItem.title = @"Calendar";
-        UIImage * image = [UIImage imageNamed:@"Hypno.png"];
+        UIImage * image = [UIImage imageNamed:@"Grave.png"];
         self.tabBarItem.image = image;
     }
     return self;

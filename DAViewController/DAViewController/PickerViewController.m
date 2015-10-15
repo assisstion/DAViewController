@@ -14,7 +14,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if(self){
         self.tabBarItem.title = @"Picker";
-        UIImage * image = [UIImage imageNamed:@"Hypno.png"];
+        UIImage * image = [UIImage imageNamed:@"BirthdayCake.png"];
         self.tabBarItem.image = image;
     }
     return self;
