@@ -8,6 +8,18 @@
 
 #import "PickerViewController.h"
 
-@implementation PickerViewController 
+@implementation PickerViewController
+
+-(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if(self){
+        self.tabBarItem.title = @"Picker";
+        UIImage * image = [UIImage imageNamed:@"Hypno.png"];
+        self.tabBarItem.image = image;
+    }
+    return self;
+    
+}
+
 
 @end
