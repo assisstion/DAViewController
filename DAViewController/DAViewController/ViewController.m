@@ -24,9 +24,8 @@
     // Dispose of any resources that can be recreated.
 }
 
--(id)init{//initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
-    //self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    self = [super init];
+-(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if(self){
         self.tabBarItem.title = @"Calendar";
         UIImage * image = [UIImage imageNamed:@"Hypno.png"];

@@ -20,9 +20,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    ViewController * root = [[ViewController alloc] init];
-    
     NSBundle * appBundle = [NSBundle mainBundle];
+    
+    ViewController * root = [[ViewController alloc] initWithNibName:@"dateView" bundle:appBundle];
     
     PickerViewController * picker = [[PickerViewController alloc] initWithNibName:@"pickerView" bundle:appBundle];
     
