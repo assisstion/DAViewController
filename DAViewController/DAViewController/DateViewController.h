@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DeathCalculator.h"
 
 @interface DateViewController : UIViewController
 
+@property DeathCalculator * calculator;
 
 
 @end
