@@ -22,7 +22,9 @@
     
     ViewController * root = [[ViewController alloc] init];
     
-    PickerViewController * picker = [[PickerViewController alloc] init];
+    NSBundle * appBundle = [NSBundle mainBundle];
+    
+    PickerViewController * picker = [[PickerViewController alloc] initWithNibName:@"pickerView" bundle:appBundle];
     
     UITabBarController * tabBarController = [[UITabBarController alloc] init];
     
