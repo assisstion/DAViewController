@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "DateViewController.h"
 #import "PickerViewController.h"
 
 @interface AppDelegate ()
@@ -22,9 +22,10 @@
     
     NSBundle * appBundle = [NSBundle mainBundle];
     
-    ViewController * root = [[ViewController alloc] initWithNibName:@"dateView" bundle:appBundle];
+    DateViewController * root = [[DateViewController alloc] initWithNibName:@"dateView" bundle:appBundle];
     
     PickerViewController * picker = [[PickerViewController alloc] initWithNibName:@"pickerView" bundle:appBundle];
+    
     
     UITabBarController * tabBarController = [[UITabBarController alloc] init];
     

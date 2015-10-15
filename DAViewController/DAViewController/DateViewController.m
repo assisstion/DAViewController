@@ -6,13 +6,13 @@
 //  Copyright © 2015 Markus Feng and Liam Gong. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "DateViewController.h"
 
-@interface ViewController ()
+@interface DateViewController ()
 
 @end
 
-@implementation ViewController
+@implementation DateViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
