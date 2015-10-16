@@ -45,7 +45,7 @@
 }
 
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
-    return self.genderData[row];
+    return [self.genderData objectAtIndex:row];
 }
 
 
