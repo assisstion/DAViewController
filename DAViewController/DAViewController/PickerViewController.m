@@ -21,7 +21,11 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-    self.genderData = @[@"A", @"B", @"C"];
+    
+    //Earliest time: Jan 1, 1900
+    self.datePicker.minimumDate = [NSDate dateWithTimeIntervalSince1970:-2208902400];
+    //Latest time: Today
+    self.datePicker.maximumDate = [NSDate date];
 }
 
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
@@ -31,6 +35,7 @@
         UIImage * image = [UIImage imageNamed:@"BirthdayCake.png"];
         self.tabBarItem.image = image;
         self.calculator = [[DeathCalculator alloc] init];
+        self.genderData = @[@"Prefer not to answer", @"Male", @"Female"];
     }
     return self;
     

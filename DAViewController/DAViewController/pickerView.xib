@@ -20,6 +20,7 @@
                     <rect key="frame" x="8" y="8" width="584" height="208"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="Q26-rT-Iux"/>
+                        <outlet property="delegate" destination="-1" id="7Hg-HL-DDt"/>
                     </connections>
                 </pickerView>
                 <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="5Cf-6M-hR4">
