@@ -19,6 +19,7 @@
 		6BA3922B1BCC0A1900BB04E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BA392291BCC0A1900BB04E7 /* LaunchScreen.storyboard */; };
 		6BA392361BCC0A1900BB04E7 /* DAViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA392351BCC0A1900BB04E7 /* DAViewControllerTests.m */; };
 		6BA392411BCC0A1900BB04E7 /* DAViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA392401BCC0A1900BB04E7 /* DAViewControllerUITests.m */; };
+		6BD8C82A1BD14AC7001BCEC3 /* DateRenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD8C8291BD14AC7001BCEC3 /* DateRenderView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		6BA3923C1BCC0A1900BB04E7 /* DAViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DAViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BA392401BCC0A1900BB04E7 /* DAViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAViewControllerUITests.m; sourceTree = "<group>"; };
 		6BA392421BCC0A1900BB04E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BD8C8281BD14AC7001BCEC3 /* DateRenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateRenderView.h; sourceTree = "<group>"; };
+		6BD8C8291BD14AC7001BCEC3 /* DateRenderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateRenderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 		6BA3921A1BCC0A1900BB04E7 /* DAViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6BD8C8281BD14AC7001BCEC3 /* DateRenderView.h */,
+				6BD8C8291BD14AC7001BCEC3 /* DateRenderView.m */,
 				6B6AA38D1BCFFDC00012AB07 /* DeathCalculator.h */,
 				6B6AA38E1BCFFDC00012AB07 /* DeathCalculator.m */,
 				6BA392211BCC0A1900BB04E7 /* DateViewController.h */,
@@ -293,6 +298,7 @@
 			files = (
 				6BA392231BCC0A1900BB04E7 /* DateViewController.m in Sources */,
 				6B6AA38F1BCFFDC00012AB07 /* DeathCalculator.m in Sources */,
+				6BD8C82A1BD14AC7001BCEC3 /* DateRenderView.m in Sources */,
 				6BA392201BCC0A1900BB04E7 /* AppDelegate.m in Sources */,
 				6B45BA331BCD590F0050FEA7 /* PickerViewController.m in Sources */,
 				6BA3921D1BCC0A1900BB04E7 /* main.m in Sources */,

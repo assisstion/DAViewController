@@ -53,6 +53,12 @@
     return [self.genderData objectAtIndex:row];
 }
 
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    //TODO Put data into brain
+    NSLog(@"Disappearing view");
+}
+
 
 
 @end

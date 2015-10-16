@@ -7,8 +7,11 @@
 //
 
 #import "DateViewController.h"
+#import "DateRenderView.h"
 
 @interface DateViewController ()
+
+@property DateRenderView * renderer;
 
 @end
 
@@ -17,6 +20,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    CGRect bounds = self.view.bounds;
+    CGRect rendererBounds = CGRectMake(bounds.origin.x + bounds.size.width / 8,
+                                       bounds.origin.y + bounds.size.height / 8,
+                                       bounds.size.width * 3 / 4,
+                                       bounds.size.height * 3 / 4);
+    self.renderer = [[DateRenderView alloc] initWithFrame:rendererBounds andColor:[UIColor blueColor]];
+    [self.view addSubview:self.renderer];
 }
 
 - (void)didReceiveMemoryWarning {
