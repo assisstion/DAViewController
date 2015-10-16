@@ -30,6 +30,7 @@
         self.tabBarItem.title = @"Calendar";
         UIImage * image = [UIImage imageNamed:@"Grave.png"];
         self.tabBarItem.image = image;
+        self.calculator = [[DeathCalculator alloc] init];
     }
     return self;
     
