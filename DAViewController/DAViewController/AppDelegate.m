@@ -22,14 +22,14 @@
     
     NSBundle * appBundle = [NSBundle mainBundle];
     
-    DateViewController * root = [[DateViewController alloc] initWithNibName:@"dateView" bundle:appBundle];
+    DateViewController * date = [[DateViewController alloc] initWithNibName:@"dateView" bundle:appBundle];
     
     PickerViewController * picker = [[PickerViewController alloc] initWithNibName:@"pickerView" bundle:appBundle];
     
     
     UITabBarController * tabBarController = [[UITabBarController alloc] init];
     
-    tabBarController.viewControllers = @[root, picker];
+    tabBarController.viewControllers = @[picker, date];
     
     self.window.rootViewController = tabBarController;
     self.window.backgroundColor = [UIColor whiteColor];
