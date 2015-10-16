@@ -10,4 +10,10 @@
 
 @implementation DeathCalculator
 
++(LifetimeData*) getLifetimeForUserData: (UserData *) uData
+{
+    LifetimeData *result = [[LifetimeData alloc] init];
+    return result;
+}
+
 @end

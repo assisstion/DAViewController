@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "UserData.h"
+#import "LifetimeData.h"
 @interface DeathCalculator : NSObject
 
++(LifetimeData*) getLifetimeForUserData: UserData;
 
 @end
