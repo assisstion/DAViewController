@@ -10,4 +10,7 @@
 
 @interface UserData : NSObject
 
+@property NSDate * dateOfBirth;
+@property bool female;
+
 @end

@@ -10,4 +10,7 @@
 
 @interface LifetimeData : NSObject
 
+@property NSArray* likelihoods;
+@property int thisWeek;
+
 @end
