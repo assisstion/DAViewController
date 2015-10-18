@@ -50,7 +50,7 @@
         UIImage * image = [UIImage imageNamed:@"BirthdayCake.png"];
         self.tabBarItem.image = image;
         self.calculator = [[DeathCalculator alloc] init];
-        self.genderData = @[@"Prefer not to answer", @"Male", @"Female"];
+        self.genderData = @[@"Please select a gender.", @"Male", @"Female"];
     }
     return self;
     
@@ -70,7 +70,6 @@
 
 -(void)viewDidDisappear:(BOOL)animated{
     DateViewController * dateController = self.tabBarController.viewControllers[1];
-    
     dateController.data = [DeathCalculator getLifetimeForUserData:[self userData]];
 }
 
