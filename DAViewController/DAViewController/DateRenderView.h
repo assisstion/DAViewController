@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DateViewController.h"
 
 @interface DateRenderView : UIView
+
+@property DateViewController * controller;
 
 -(id)initWithFrame:(CGRect)frame andColor:(UIColor *)color;
 

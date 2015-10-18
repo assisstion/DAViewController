@@ -7,6 +7,8 @@
 //
 
 #import "PickerViewController.h"
+#import "DateViewController.h"
+#import "UserData.h"
 
 @interface PickerViewController ()
 
@@ -67,9 +69,19 @@
 }
 
 -(void)viewDidDisappear:(BOOL)animated{
-    [super viewDidDisappear:animated];
-    //TODO Put data into brain
-    NSLog(@"Disappearing view");
+    DateViewController * dateController = self.tabBarController.viewControllers[1];
+    
+    dateController.data = [DeathCalculator getLifetimeForUserData:[self userData]];
+}
+
+-(UserData *) userData{
+    UserData * data = [[UserData alloc] init];
+    int component = 0;
+    NSString * selectedItem = [self pickerView:self.genderPicker titleForRow:
+                               [self.genderPicker selectedRowInComponent:component] forComponent:component];
+    data.female = [selectedItem isEqualToString:@"Female"];
+    data.dateOfBirth = [self.datePicker date];
+    return data;
 }
 
 
