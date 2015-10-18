@@ -22,10 +22,23 @@
 -(void)viewDidLoad{
     [super viewDidLoad];
     
-    //Earliest time: Jan 1, 1900
-    self.datePicker.minimumDate = [NSDate dateWithTimeIntervalSince1970:-2208902400];
-    //Latest time: Today
+    NSDateComponents * components = [[NSDateComponents alloc] init];
+    [components setMonth:1];
+    [components setDay:1];
+    [components setYear:1900];
+    NSDate * minDate = [[NSCalendar currentCalendar] dateFromComponents:components];
+   
+    self.datePicker.minimumDate = minDate;
     self.datePicker.maximumDate = [NSDate date];
+    
+    components = [[NSDateComponents alloc] init];
+    [components setMonth:1];
+    [components setDay:1];
+    [components setYear:2000];
+    
+    NSDate * defaultDate = [[NSCalendar currentCalendar] dateFromComponents:components];
+    
+    [self.datePicker setDate:defaultDate];
 }
 
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{

@@ -25,7 +25,7 @@
                                        bounds.origin.y + bounds.size.height / 8,
                                        bounds.size.width * 3 / 4,
                                        bounds.size.height * 3 / 4);
-    self.renderer = [[DateRenderView alloc] initWithFrame:rendererBounds andColor:[UIColor blueColor]];
+    self.renderer = [[DateRenderView alloc] initWithFrame:rendererBounds andColor:[UIColor colorWithRed:0 green:0.75 blue:1 alpha:1]];
     [self.view addSubview:self.renderer];
 }
 
