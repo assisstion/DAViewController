@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "DeathCalculator.h"
 
-@interface PickerViewController : UIViewController <UIPickerViewDataSource>
+@interface PickerViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
 @property DeathCalculator * calculator;
 

@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "DeathCalculator.h"
 #import "LifetimeData.h"
+#import "DateRenderView.h"
 
 @interface DateViewController : UIViewController
 
 @property DeathCalculator * calculator;
-@property LifetimeData * data;
-
+@property DateRenderView * renderer;
 
 @end
 

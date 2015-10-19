@@ -41,6 +41,9 @@
     NSDate * defaultDate = [[NSCalendar currentCalendar] dateFromComponents:components];
     
     [self.datePicker setDate:defaultDate];
+    
+    DateViewController * dateController = self.tabBarController.viewControllers[1];
+    dateController.tabBarItem.enabled = false;
 }
 
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
@@ -68,9 +71,20 @@
     return [self.genderData objectAtIndex:row];
 }
 
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+    DateViewController * dateController = self.tabBarController.viewControllers[1];
+    if(row == 0){
+        dateController.tabBarItem.enabled = false;
+    }
+    else{
+        dateController.tabBarItem.enabled = true;
+    }
+}
+
 -(void)viewDidDisappear:(BOOL)animated{
     DateViewController * dateController = self.tabBarController.viewControllers[1];
-    dateController.data = [DeathCalculator getLifetimeForUserData:[self userData]];
+    dateController.renderer.data = [DeathCalculator getLifetimeForUserData:[self userData]];
+    [dateController.renderer setNeedsDisplay];
 }
 
 -(UserData *) userData{

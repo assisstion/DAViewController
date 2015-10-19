@@ -45,8 +45,8 @@
     
     //Sample data testing
     
-    int weeksAlive = self.controller.data.thisWeek;
-    NSArray * data = self.controller.data.likelihoods;
+    int weeksAlive = self.data.thisWeek;
+    NSArray * data = self.data.likelihoods;
     
     [self drawWithWeeksOld:weeksAlive andData:data];
     
@@ -100,7 +100,6 @@
         }
         
     }
-    NSLog(@"made path");
 }
 
 

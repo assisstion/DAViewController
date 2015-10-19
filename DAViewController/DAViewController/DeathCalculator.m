@@ -27,8 +27,8 @@
         }
     }
      
-     result.likelihoods = testingArray;
-     result.thisWeek = alive;
+    result.likelihoods = testingArray;
+    result.thisWeek = alive;
     return result;
 }
 

@@ -11,8 +11,6 @@
 
 @interface DateViewController ()
 
-@property DateRenderView * renderer;
-
 @end
 
 @implementation DateViewController
@@ -26,7 +24,6 @@
                                        bounds.size.width * 3 / 4,
                                        bounds.size.height * 3 / 4);
     self.renderer = [[DateRenderView alloc] initWithFrame:rendererBounds andColor:[UIColor colorWithRed:0 green:0.75 blue:1 alpha:1]];
-    self.renderer.controller = self;
     [self.view addSubview:self.renderer];
 }
 

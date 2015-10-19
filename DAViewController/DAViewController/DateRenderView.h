@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DateViewController.h"
+#import "LifetimeData.h"
 
 @interface DateRenderView : UIView
 
-@property DateViewController * controller;
+@property LifetimeData * data;
 
 -(id)initWithFrame:(CGRect)frame andColor:(UIColor *)color;
 
