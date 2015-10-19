@@ -18,7 +18,10 @@
     
     //Values to find the expected lifespan
     float powerConst = 3.5;
-    float minimumExpectancy = 70;
+    float minimumExpectancy = 75;
+    if(uData.female){
+        minimumExpectancy = 80;
+    }
     
     NSDate * today = [[NSDate alloc] init];
     NSDate * birthDate = [uData dateOfBirth];
