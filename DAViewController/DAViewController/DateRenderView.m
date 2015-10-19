@@ -58,7 +58,12 @@
     
     int length = (int)data.count;
     int weeks = 52;
-    float horizSeparation = self.bounds.size.width / (weeks + 1); //52 weeks per year
+    float horizSeparation = self.bounds.size.width / (weeks + 1);
+    float vertiSeparation = horizSeparation;
+    //Approximate maximum that can fit on the screen at once with standard vertiSeparation
+    if(data.count > 4800){
+        vertiSeparation = horizSeparation * 2/3;
+    }
     
     float lastProbability = 1;
     
@@ -89,7 +94,7 @@
         
         
         float x = horizSeparation * ((i % weeks) + 1);
-        float y = horizSeparation * ((i / weeks) + 1);
+        float y = vertiSeparation * ((i / weeks) + 1);
         if(i == weeksAlive){
             [path moveToPoint: CGPointMake(x-2, y)];
             [path addLineToPoint: CGPointMake(x+2, y)];

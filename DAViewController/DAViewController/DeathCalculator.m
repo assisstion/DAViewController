@@ -15,20 +15,31 @@
     LifetimeData *result = [[LifetimeData alloc] init];
     
     NSMutableArray * testingArray = [[NSMutableArray alloc] init];
-     
-        int alive = 2000;
-        int total = 3000;
-        for(int i = 0; i < total; i++){
-            if(i <= alive) {
+    
+    //Values to find the expected lifespan
+    float powerConst = 3.5;
+    float minimumExpectancy = 70;
+    
+    NSDate * today = [[NSDate alloc] init];
+    NSDate * birthDate = [uData dateOfBirth];
+    
+    //604800 seconds per week
+    int weeksAlive = ([today timeIntervalSince1970] - [birthDate timeIntervalSince1970])/604800;
+    
+    int expectedWeeks = pow(pow(weeksAlive/52, powerConst) + pow(minimumExpectancy, powerConst), 1/powerConst) * 52;
+    
+    NSLog(@"%i", expectedWeeks);
+    for(int i = 0; i < expectedWeeks; i++){
+            if(i <= weeksAlive) {
                 [testingArray addObject:@1];
             }
             else{
-                [testingArray addObject:[[NSNumber alloc] initWithFloat:1 - (i - alive) / (float)(total - alive)]];
+                [testingArray addObject:[[NSNumber alloc] initWithFloat:1 - (i - weeksAlive) / (float)(expectedWeeks - weeksAlive)]];
         }
     }
      
     result.likelihoods = testingArray;
-    result.thisWeek = alive;
+    result.thisWeek = weeksAlive;
     return result;
 }
 
